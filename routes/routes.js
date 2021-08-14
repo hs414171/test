@@ -66,7 +66,7 @@ router.post('/reg_user', async (req, res)=>{
             console.log(token2)
             
             
-            const url = `http://localhost:3000/api/user/verification/${token2}`
+            const url = `https://dsc-app2.herokuapp.com/api/user/verification/${token2}`
             const options = {
                 from : process.env.EMAIL_ADDRESS,
                 to : req.body.email,
