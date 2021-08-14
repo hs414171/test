@@ -21,7 +21,7 @@ router.post('/login', async (req, res)=>{
     
     if (!user.verified) return res.send("email not confirmed")
     else{
-        res.json({message:"Hello"})
+        res.status(203).json({message:"Hello"})
         
     }
     
