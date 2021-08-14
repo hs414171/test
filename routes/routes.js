@@ -112,7 +112,9 @@ router.get('/verification/:token2',async(req,res)=>{
       }
 })
 
-
+router.get('/test', async (req,res) => {
+    res.status(269).send("testing route");
+});
 
 
 module.exports = router
